@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Translator API</title>
+	<link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+
+
+	<div class="api_translate">
+
+		<div class="translate">
+			<div class="navbar">
+				<div class="left">
+					<a href="#">Translator API</a>
+				</div>
+				<div class="right">
+					<a href=""><span class="icon_github" data-feather="github"></span>Github</a>
+				</div>
+			</div>
+			<!--==== INICIO HTML A IMPORTAR ====-->
+			<div id="google_translate_element">
+				<span class="icon" data-feather="globe"></span>
+			</div>
+			<!--==== FIN HTML A IMPORTAR ====-->
+			<div class="title_example">
+				<button>Download Source Code</button>
+			</div>
+		</div>
+
+	</div>
+	<div class="svg">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d68ff" fill-opacity="1" d="M0,192L720,288L1440,320L1440,0L720,0L0,0Z"></path></svg>
+	</div>
+
+	<div class="content">
+		<div class="text">
+			<h1>La isla misteriosa</h1>
+		<p>Durante la guerra de secesión de América, unos prisioneros de los sudistas consiguen evadirse y apoderarse de un globo, con el cual huyen. Pero cuando sobrevuelan el océano, el globo es embestido por una tromba marina, y sus tripulantes son arrojados a la playa de una isla desconocida.</p>
+		</div>
+	</div>
+	<div class="space"></div>
+<!--==== INICIO JAVASCRIPT A IMPORTAR ====-->
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement({
+				pageLanguage: 'en',
+				includedLanguages: 'en,fr,it,pt,de,es'},
+				'google_translate_element');
+		}
+	</script>
+	<script>
+		const deleteLabel = setInterval(() => {
+			if (document.querySelector('.goog-te-combo option')) {
+				document.querySelectorAll('.goog-te-combo option')
+				.forEach(o => {
+					if (o.textContent.includes('Seleccionar idioma')) {
+						o.remove()
+					}
+				})
+				clearInterval(deleteLabel);
+			}
+		
+		}, 100)
+		document.addEventListener("DOMContentLoaded", () => {})
+	</script>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script src="resources/js/feather.js"></script>
+	<script>
+		feather.replace()
+	</script>
+<!--==== FIN JAVASCRIPT A IMPORTAR ====-->
+</body>
+</html>

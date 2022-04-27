@@ -1,0 +1,192 @@
+/*=== INICIO CSS SELECT ===*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/*===BARRA TOP===*/
+.goog-te-banner-frame {
+   display: none;
+}
+/*===LOGO===*/
+.goog-logo-link {
+   display: none !important;
+}
+/*===COPYRIGHT===*/
+.goog-te-gadget {
+   color: transparent !important;
+   font-size: 0 !important;
+}
+
+/*===BODY===*/
+*{
+    box-sizing: border-box;
+}
+body{
+   position: static;
+   top: 0px !important;
+   margin: 0;
+   padding: 0;
+   background-color: #f3f6ff;
+   font-family: 'Roboto', sans-serif;
+
+
+}
+/*===ELEMENTO AL SELECCIONAR TEXTO===*/
+#goog-gt-tt{
+   display: none !important;
+}
+.skiptranslate > div:after{
+   content: url('chevron-down.svg');
+   color:  #405169;
+   right: 11px;
+   top: 11px;
+   position: absolute;
+   pointer-events: none;
+
+}
+.skiptranslate  select{
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   -ms-appearance: none;
+   appearance:none;
+   outline: 0;
+   background-image: none;
+   border: 0;
+   background-color: transparent;
+   padding: 0px 16px;
+   padding-left: 35px;
+   padding-right: 10px;
+   color: #405169;
+   height: 44px;
+   width: 152px;
+   cursor: pointer;
+   font-family: 'Roboto', sans-serif;
+
+}
+.skiptranslate  select option {
+   background-color: #f1f4ff;
+   color: #232731;
+  
+}
+.skiptranslate  select option:hover{
+    background-color: #0d68ff; 
+}
+#google_translate_element:hover {
+   box-shadow: 0 0 0 2px rgba(52, 150, 249, .5);
+}
+.goog-te-gadget .goog-te-combo {
+   margin: 0 !important;
+}
+.icon{
+   width: 17px;
+   height: 17px;
+   color: #405169;
+   position: absolute;
+   left: 10px;
+}
+
+#google_translate_element{
+   display: inline-flex;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 4px;
+   height: 44px;
+   border: none;
+   box-shadow: 0 0 0 2px #dfeafb;
+   background-color: white;
+   position: relative;
+   width: 150px;
+   transition: .4s all ease-in;
+}
+/*=== FIN CSS SELECT ===*/
+
+/*===MAIN===*/
+.api_translate{
+ background-color: #0d68ff; 
+}
+.translate{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+}
+.translate .navbar {
+    display: flex;
+    justify-content: space-between;
+   margin-bottom: 60px;
+}
+.translate .navbar .left{
+    display: flex;
+    align-items: center;
+}
+.translate .navbar .right a{
+     background-color: #0060fe;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+padding: 8px 16px;
+border-radius: 4px;
+font-weight: 400;
+transition: .4s all ease-in;
+cursor: pointer;
+}
+.translate .navbar .right a:hover{
+    box-shadow: 0 0 0 2px rgba(52, 150, 249, .5);
+}
+.translate .navbar .icon_github{
+    color: whitesmoke;
+    margin-right: 5px;
+    
+}
+.translate .navbar a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+.title_example button{
+    background-color: #0060fe;
+    border: none;
+    height: 44px;
+    border-radius: 4px;
+    color: whitesmoke;
+    margin-top: 20px;
+    padding: 0px 16px;
+    margin-bottom: 5px;
+    transition: .4s all ease-in;
+    cursor: pointer;
+}
+.title_example button:hover{
+    box-shadow: 0 0 0 2px rgba(52, 150, 249, .5);
+}
+.content{
+   width: 70%;   
+   margin: 0 auto;
+   background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+   border-radius: 7px;
+   padding: 20px;
+   margin-top: 30px;
+
+
+}
+
+.content .text h1{
+   color: #405169;
+   font-weight: 500;
+}
+.content .text p{
+    color: #405169;
+    line-height: 27px;
+    letter-spacing: .2px;
+}
+.space{
+    height: 80px;
+}
+@media screen and (max-width: 480px){
+    .translate{
+        width: 90%;
+    }
+.content{
+   width: 90%;   
+}
+}
